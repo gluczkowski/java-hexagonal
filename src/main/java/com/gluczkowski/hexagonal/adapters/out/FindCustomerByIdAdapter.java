@@ -18,6 +18,8 @@ public class FindCustomerByIdAdapter implements FindCustomerByIdOutputPort {
 
     @Autowired
     private CustomerEntityMapper customerEntityMapper;
+    
+    
 
     @Override
     public Optional<Customer> find(String id) {

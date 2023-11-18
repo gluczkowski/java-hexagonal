@@ -10,7 +10,10 @@ import com.gluczkowski.Hexagonal.application.core.usecase.FindCustomerByIdUseCas
 public class FindCustomerByIdConfig {
 
     @Bean
-    public FindCustomerByIdUseCase findCustomerByIdUseCase(FindCustomerByIdAdapter findCustomerByIdAdapter) {
+    public FindCustomerByIdUseCase findCustomerByIdUseCase(
+            FindCustomerByIdAdapter findCustomerByIdAdapter
+    ) {
         return new FindCustomerByIdUseCase(findCustomerByIdAdapter);
     }
+
 }

@@ -11,10 +11,11 @@ import com.gluczkowski.Hexagonal.application.core.usecase.FindCustomerByIdUseCas
 public class DeleteCustomerByIdConfig {
 
     @Bean
-    public DeleteCustomerByIdUseCase deleteCustomerByIdUseCase(FindCustomerByIdUseCase findCustomerByIdUseCase,
-            DeleteCustomerByIdAdapter deleteCustomerByIdAdapter) {
+    public DeleteCustomerByIdUseCase deleteCustomerByIdUseCase(
+            FindCustomerByIdUseCase findCustomerByIdUseCase,
+            DeleteCustomerByIdAdapter deleteCustomerByIdAdapter
+    ) {
         return new DeleteCustomerByIdUseCase(findCustomerByIdUseCase, deleteCustomerByIdAdapter);
-
     }
 
 }
